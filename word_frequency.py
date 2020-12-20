@@ -8,7 +8,7 @@ import nltk
 from nltk.tokenize import word_tokenize,sent_tokenize
 from nltk.probability import FreqDist
 from openpyxl import load_workbook
-wb = load_workbook("large.xlsx")  # Work Book
+wb = load_workbook("feedback.xlsx")  # Work Book
 ws = wb.get_sheet_by_name('Sheet1')  # Work Sheet
 column = ws['A']  # Column
 column_list = [column[x].value for x in range(len(column))]
